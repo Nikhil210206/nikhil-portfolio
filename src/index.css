@@ -14,3 +14,10 @@ body {
   background: #888;
   border-radius: 3px;
 }
+
+section {
+  scroll-margin-top: 100px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
