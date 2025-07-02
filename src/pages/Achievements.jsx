@@ -34,7 +34,7 @@ export default function Achievements() {
           <motion.div
             key={idx}
             whileHover={{ scale: 1.05 }}
-            className="bg-white/10 p-4 rounded-lg text-white border border-white/10"
+            className="bg-white/5 backdrop-blur-2xl shadow-lg border border-white/10 hover:scale-[1.02] transition-transform duration-300 p-4 rounded-lg text-white"
           >
             {item}
           </motion.div>
