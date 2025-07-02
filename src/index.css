@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-black text-white font-mono;
+}
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -23,7 +26,7 @@ html {
 }
 
 body {
-  @apply bg-white text-black dark:bg-black dark:text-white font-mono;
+  @apply bg-black text-white dark:bg-white dark:text-black;
 }
 
 
