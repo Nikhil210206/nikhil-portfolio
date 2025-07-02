@@ -46,7 +46,7 @@ export default function Experience() {
 					<motion.div
 						key={idx}
 						whileHover={{ scale: 1.02 }}
-						className="bg-white/5 backdrop-blur-2xl shadow-lg border border-white/10 hover:scale-[1.02] transition-transform duration-300 p-5 rounded-lg"
+						className="bg-white/5 border border-white/10 shadow-xl backdrop-blur-2xl p-6 rounded-xl transition-transform duration-300 hover:scale-[1.02] hover:ring-1 hover:ring-white/20"
 					>
 						<h3 className="text-white text-xl font-semibold">{exp.title}</h3>
 						<p className="text-gray-300 text-sm">
