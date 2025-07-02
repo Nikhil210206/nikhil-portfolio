@@ -9,8 +9,39 @@ function Home() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen px-4 py-10 flex flex-col items-center justify-center text-center"
+      className="min-h-screen px-4 py-10 flex flex-col items-center justify-center text-center relative"
     >
+      {/* SVG Background Layer 1 */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <svg
+          className="absolute top-[-20%] left-[-10%] w-[120%] h-[120%] opacity-30 blur-3xl"
+          viewBox="0 0 800 600"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+              <stop offset="0%" style={{ stopColor: "#00f", stopOpacity: 1 }} />
+              <stop offset="100%" style={{ stopColor: "#0ff", stopOpacity: 0 }} />
+            </radialGradient>
+          </defs>
+          <circle cx="400" cy="300" r="300" fill="url(#grad1)" />
+        </svg>
+        {/* SVG Background Layer 2 (optional, for more effect) */}
+        <svg
+          className="absolute top-[10%] left-[30%] w-[80%] h-[80%] opacity-20 blur-2xl"
+          viewBox="0 0 800 600"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+              <stop offset="0%" style={{ stopColor: "#f0f", stopOpacity: 1 }} />
+              <stop offset="100%" style={{ stopColor: "#ff0", stopOpacity: 0 }} />
+            </radialGradient>
+          </defs>
+          <circle cx="400" cy="300" r="250" fill="url(#grad2)" />
+        </svg>
+      </div>
+
       <motion.h1 
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
