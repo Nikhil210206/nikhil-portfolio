@@ -67,47 +67,47 @@ function Home() {
         </svg>
       </div>
 
-      <motion.h1
+      <motion.h1 
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-5xl font-extrabold mb-4 text-black dark:text-white"
+        className="text-5xl md:text-7xl font-bold text-white"
       >
-        Hello, I’m Nikhil
+        Nikhil Balamurugan
       </motion.h1>
 
-      <motion.p
+      <motion.p 
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="text-xl mt-4 text-gray-800 dark:text-gray-300"
+        className="text-xl md:text-2xl mt-4 text-gray-200"
       >
-        Software Developer | AI Enthusiast
+        Software Developer | AI Enthusiast | Open Source Contributor
       </motion.p>
 
-      <motion.div
+      <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
         className="mt-10 space-x-4"
       >
-        <a
-          href="https://github.com/Nikhil210206"
-          target="_blank"
+        <a 
+          href="https://github.com/Nikhil210206" 
+          target="_blank" 
           className="px-6 py-2 bg-white text-black rounded hover:bg-gray-300"
         >
           GitHub
         </a>
-        <a
-          href="https://www.linkedin.com/in/nikhilb21/"
-          target="_blank"
+        <a 
+          href="https://www.linkedin.com/in/nikhilb21/" 
+          target="_blank" 
           className="px-6 py-2 border border-white rounded hover:bg-white hover:text-black"
         >
           LinkedIn
         </a>
-        <a
-          href="/resume.pdf"
-          download
+        <a 
+          href="/resume.pdf" 
+          download 
           className="px-6 py-2 border border-gray-400 text-gray-400 rounded hover:bg-gray-100 hover:text-black"
         >
           Download Resume
