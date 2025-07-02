@@ -21,3 +21,8 @@ section {
   padding-bottom: 6rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
