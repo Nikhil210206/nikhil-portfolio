@@ -11,34 +11,59 @@ function Home() {
       transition={{ duration: 0.5 }}
       className="min-h-screen px-4 py-10 flex flex-col items-center justify-center text-center relative"
     >
-      {/* SVG Background Layer 1 */}
+      {/* Psychedelic SVG Background Layers */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
+        {/* Blue to Cyan */}
         <svg
           className="absolute top-[-20%] left-[-10%] w-[120%] h-[120%] opacity-30 blur-3xl"
           viewBox="0 0 800 600"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
-            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-              <stop offset="0%" style={{ stopColor: "#00f", stopOpacity: 1 }} />
-              <stop offset="100%" style={{ stopColor: "#0ff", stopOpacity: 0 }} />
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#00f" stopOpacity="1" />
+              <stop offset="100%" stopColor="#0ff" stopOpacity="0" />
             </radialGradient>
           </defs>
           <circle cx="400" cy="300" r="300" fill="url(#grad1)" />
         </svg>
-        {/* SVG Background Layer 2 (optional, for more effect) */}
+        {/* Magenta to Yellow */}
         <svg
           className="absolute top-[10%] left-[30%] w-[80%] h-[80%] opacity-20 blur-2xl"
           viewBox="0 0 800 600"
-          xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
-            <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-              <stop offset="0%" style={{ stopColor: "#f0f", stopOpacity: 1 }} />
-              <stop offset="100%" style={{ stopColor: "#ff0", stopOpacity: 0 }} />
+            <radialGradient id="grad2" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#f0f" stopOpacity="1" />
+              <stop offset="100%" stopColor="#ff0" stopOpacity="0" />
             </radialGradient>
           </defs>
           <circle cx="400" cy="300" r="250" fill="url(#grad2)" />
+        </svg>
+        {/* Orange to Pink */}
+        <svg
+          className="absolute top-[40%] left-[60%] w-[60%] h-[60%] opacity-25 blur-2xl"
+          viewBox="0 0 800 600"
+        >
+          <defs>
+            <radialGradient id="grad3" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#ff9800" stopOpacity="1" />
+              <stop offset="100%" stopColor="#e040fb" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+          <circle cx="400" cy="300" r="200" fill="url(#grad3)" />
+        </svg>
+        {/* Green to Blue */}
+        <svg
+          className="absolute top-[60%] left-[10%] w-[70%] h-[70%] opacity-20 blur-2xl"
+          viewBox="0 0 800 600"
+        >
+          <defs>
+            <radialGradient id="grad4" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#00ff90" stopOpacity="1" />
+              <stop offset="100%" stopColor="#00bfff" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+          <circle cx="400" cy="300" r="220" fill="url(#grad4)" />
         </svg>
       </div>
 
@@ -55,7 +80,7 @@ function Home() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="text-xl md:text-2xl mt-4 text-gray-400"
+        className="text-xl md:text-2xl mt-4 text-gray-200"
       >
         Software Developer | AI Enthusiast | Open Source Contributor
       </motion.p>
