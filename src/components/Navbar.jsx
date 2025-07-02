@@ -52,10 +52,10 @@ export default function Navbar() {
             <a
               key={sec}
               href={`#${sec.toLowerCase()}`}
-              className={`transition duration-300 ${
+              className={`text-sm transition duration-300 ${
                 active === sec
-                  ? 'text-blue-400 underline underline-offset-4'
-                  : 'text-gray-300 hover:text-white'
+                  ? 'text-blue-600 dark:text-blue-400 underline underline-offset-4'
+                  : 'text-black dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
               }`}
             >
               {sec}
@@ -86,7 +86,11 @@ export default function Navbar() {
             <a
               key={sec}
               href={`#${sec.toLowerCase()}`}
-              className="block text-gray-300 hover:text-white"
+              className={`block text-sm ${
+                active === sec
+                  ? 'text-blue-600 dark:text-blue-400 underline underline-offset-4'
+                  : 'text-black dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+              }`}
               onClick={() => setShowMobileMenu(false)}
             >
               {sec}
