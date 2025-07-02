@@ -6,10 +6,12 @@ import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Achievements from './pages/Achievements';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={
           <>
@@ -25,5 +27,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;
