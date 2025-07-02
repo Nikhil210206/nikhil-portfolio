@@ -22,7 +22,14 @@ export default function Projects() {
   ];
 
   return (
-    <section className="min-h-screen px-4 py-10 flex flex-col items-center" id="projects">
+    <motion.section
+      id="projects"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen px-4 py-10 flex flex-col items-center"
+    >
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -36,6 +43,6 @@ export default function Projects() {
           <ProjectCard key={idx} {...proj} />
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

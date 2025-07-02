@@ -25,4 +25,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  @apply bg-black text-white dark:bg-white dark:text-black;
+}
+
+
 

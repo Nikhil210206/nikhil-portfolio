@@ -3,7 +3,14 @@ import { motion } from 'framer-motion';
 
 function Home() {
   return (
-    <div className="h-screen flex flex-col items-center justify-center text-center p-6">
+    <motion.section
+      id="home"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen px-4 py-10 flex flex-col items-center justify-center text-center"
+    >
       <motion.h1 
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -50,7 +57,7 @@ function Home() {
           Download Resume
         </a>
       </motion.div>
-    </div>
+    </motion.section>
   );
 }
 

@@ -3,7 +3,14 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-4" id="about">
+    <motion.section
+      id="about"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen px-4 py-10 flex flex-col items-center justify-center"
+    >
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -25,6 +32,6 @@ export default function About() {
         <br /><br />
         Tools I use include <span className="text-white">React, Flask, TensorFlow, Tailwind CSS, GitHub</span>, and more.
       </motion.p>
-    </section>
+    </motion.section>
   );
 }

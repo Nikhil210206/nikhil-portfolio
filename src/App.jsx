@@ -7,10 +7,12 @@ import Experience from './pages/Experience';
 import Achievements from './pages/Achievements';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import AnimatedCursor from './components/AnimatedCursor';
 
 function App() {
   return (
     <Router>
+      <AnimatedCursor />
       <Navbar />
       <Routes>
         <Route path="/" element={
@@ -27,6 +29,7 @@ function App() {
     </Router>
   );
 }
+
 
 
 export default App;
