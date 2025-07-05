@@ -39,7 +39,7 @@ export default function Home() {
         transition={{ duration: 0.7, delay: 0.4 }}
         className="text-xl md:text-2xl mt-6 text-gray-300 max-w-2xl"
       >
-        Software Engineer • AI/ML Dev • Open Source Contributor
+        Sophomore • AI/ML Dev • Open Source Contributor
       </motion.p>
 
       <motion.div
@@ -51,7 +51,7 @@ export default function Home() {
         <a
           href="https://github.com/Nikhil210206"
           target="_blank"
-          className="px-6 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition"
+          className="px-6 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black transition"
         >
           GitHub
         </a>
