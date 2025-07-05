@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -24,6 +25,7 @@ function App() {
                 <section id="experience" className="snap-start"><Experience /></section>
                 <section id="achievements" className="snap-start"><Achievements /></section>
                 <Footer />
+                <Analytics />
               </>
             } />
           </Routes>
