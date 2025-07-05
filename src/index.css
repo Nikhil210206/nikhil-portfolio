@@ -2,32 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-black text-white font-mono;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 3px;
-}
-
-section {
-  scroll-margin-top: 100px;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-black text-white dark:bg-white dark:text-black;
+  @apply font-sans bg-gradient-to-b from-bgDark via-bgMid to-bgLight text-white;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
 
-
+section {
+  scroll-margin-top: 80px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
