@@ -32,20 +32,11 @@ export default function Navbar() {
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed w-full top-0 z-50 bg-black/70 backdrop-blur-sm shadow-md"
+      className="fixed w-full top-0 z-50 bg-black/50 backdrop-blur-md border-b border-white/10"
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-        <div className="flex items-center">
-          <a href="#" className="text-xl font-bold text-white">Nikhil B.</a>
-          <button
-            onClick={() => {
-              document.documentElement.classList.toggle("dark");
-            }}
-            className="text-white ml-4"
-          >
-            🌓
-          </button>
-        </div>
+        <a href="#" className="text-xl font-bold text-white">Nikhil B.</a>
+
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 text-sm font-medium">
           {sections.map((sec) => (
@@ -62,6 +53,7 @@ export default function Navbar() {
             </a>
           ))}
         </div>
+
         {/* Mobile Hamburger */}
         <button
           className="md:hidden text-white"
@@ -74,14 +66,6 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       {showMobileMenu && (
         <div className="md:hidden bg-black/90 px-6 pb-4 space-y-2 text-center">
-          <button
-            onClick={() => {
-              document.documentElement.classList.toggle("dark");
-            }}
-            className="text-white mb-2"
-          >
-            🌓
-          </button>
           {sections.map((sec) => (
             <a
               key={sec}
