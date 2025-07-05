@@ -1,8 +1,21 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: 'class', // 👈 enable class-based dark mode
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        mono: ['Fira Code', 'monospace'],
+      },
+      colors: {
+        bgDark: "#0f0c29",
+        bgMid: "#302b63",
+        bgLight: "#24243e",
+      },
+    },
   },
   plugins: [],
 }
