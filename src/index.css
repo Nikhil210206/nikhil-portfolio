@@ -12,6 +12,12 @@ body {
   @apply font-sans bg-gradient-to-b from-bgDark via-bgMid to-bgLight text-white;
 }
 
+section {
+  scroll-margin-top: 80px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -20,8 +26,22 @@ body {
   border-radius: 6px;
 }
 
-section {
-  scroll-margin-top: 80px;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+/* Blob Morphing Animation */
+@keyframes blob {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  33% {
+    transform: translate(-48%, -52%) scale(1.05);
+  }
+  66% {
+    transform: translate(-52%, -48%) scale(0.95);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 15s ease-in-out infinite;
 }

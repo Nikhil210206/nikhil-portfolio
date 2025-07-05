@@ -3,20 +3,24 @@ import { motion } from 'framer-motion';
 export default function Home() {
   return (
     <div className="h-screen flex flex-col items-center justify-center text-center relative overflow-hidden px-6">
-      {/* Background glow SVG */}
-      <div className="absolute inset-0 -z-10">
+      {/* Background blob SVG */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
-          className="absolute top-[-20%] left-[-10%] w-[140%] h-[140%] opacity-20 blur-2xl"
-          viewBox="0 0 800 600"
+          viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
+          className="absolute left-1/2 top-1/2 w-[60vw] max-w-[800px] -translate-x-1/2 -translate-y-1/2 blur-3xl opacity-30 animate-blob"
         >
+          <path
+            fill="url(#gradient)"
+            d="M47.6,-63.9C60.4,-54.1,68.3,-40.5,72.3,-26.7C76.4,-12.9,76.7,1.1,73.3,14.7C69.9,28.2,62.7,41.3,51.7,51.6C40.7,61.9,25.8,69.4,10.5,70.5C-4.8,71.6,-20.5,66.3,-35.4,58.2C-50.2,50.2,-64.2,39.4,-70.5,25.4C-76.7,11.4,-75.2,-5.7,-67.9,-20.3C-60.7,-35,-47.7,-47.3,-33.7,-57C-19.8,-66.8,-9.9,-73.9,3.2,-78.1C16.4,-82.4,32.8,-83.6,47.6,-63.9Z"
+            transform="translate(100 100)"
+          />
           <defs>
-            <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="#00f" stopOpacity="1" />
-              <stop offset="100%" stopColor="#0ff" stopOpacity="0" />
-            </radialGradient>
+            <linearGradient id="gradient" gradientTransform="rotate(45)">
+              <stop offset="0%" stopColor="#00ffff" />
+              <stop offset="100%" stopColor="#7f00ff" />
+            </linearGradient>
           </defs>
-          <circle cx="400" cy="300" r="300" fill="url(#grad1)" />
         </svg>
       </div>
 
